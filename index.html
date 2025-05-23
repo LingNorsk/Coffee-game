@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee-game</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="menu-message">
+                <p>You can use&nbsp;<a href="https://github.com/LingNorsk/Coffee-game" target="_blank" rel="noopener noreferrer"><strong>the code</strong></a> for this animation! Best regards Yevgeniy S.</p>
+            </div>
+        </header>
+        <div class="main-content">
+            <h1 class="hero-title">Coffee Time</h1>
+            <section id="fifteen" class="game-blocks"></section>
+            <div class="controls">
+                <button id="generate" class="game-block--green">New game</button>
+                <button id="restart" class="game-block--green">Restart</button>
+            </div>
+        </div>
+    </div>
+    <div id="fireworks" style="pointer-events:none; position:fixed; left:0; top:0; width:100vw; height:100vh; z-index:9999;"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
