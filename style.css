@@ -119,7 +119,8 @@ body, html {
   background: linear-gradient(120deg, #70c4ad 80%, #b672c2 100%);
   background-size: cover;
   color: #000000;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-style: normal;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -259,6 +260,9 @@ body, html {
   }
   .main-content {
     padding-bottom: 100px;
+  }
+  .game-block {
+    font-style: normal;
   }
   .game-blocks {
     width: min(96vw, calc(100vh - 160px));
