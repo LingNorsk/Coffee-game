@@ -214,13 +214,12 @@ generateBtn.addEventListener('click', newGame);
 restartBtn.addEventListener('click', restartGame);
 
 // Start generation
-newGame();
-
-// --- autostart ---
 if (window.location.search.includes('autostart=1')) {
-    setTimeout(() => {
+    window.addEventListener('load', () => {
         newGame();
-    }, 400);
+    });
+} else {
+    newGame();
 }
 
 // --- Swipe and drag support ---
