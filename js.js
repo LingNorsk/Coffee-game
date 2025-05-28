@@ -285,3 +285,9 @@ function tryMoveDirection(tile, direction) {
     if (direction === 'right' && empty.col === col + 1 && empty.row === row) canMove = true;
     if (canMove) moveTile(tile, row, col, empty.row, empty.col);
 }
+const gameBlocks = document.querySelector('.game-blocks');
+if (gameBlocks) {
+  gameBlocks.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+}
