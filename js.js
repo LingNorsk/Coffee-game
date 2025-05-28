@@ -220,7 +220,7 @@ newGame();
 if (window.location.search.includes('autostart=1')) {
     setTimeout(() => {
         newGame();
-    }, 100);
+    }, 400);
 }
 
 // --- Swipe and drag support ---
