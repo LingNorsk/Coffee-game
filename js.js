@@ -216,6 +216,19 @@ restartBtn.addEventListener('click', restartGame);
 // Start generation
 newGame();
 
+// --- autostart ---
+if (window.location.search.includes('autostart=1')) {
+    setTimeout(() => {
+        newGame();
+    }, 100);
+}
+
+// --- Swipe and drag support ---
+function addSwipeSupport(tile) {
+    let startX = 0, startY = 0, isMouse = false;
+    // ...
+}
+
 // --- Swipe and drag support ---
 function addSwipeSupport(tile) {
     let startX = 0, startY = 0, isMouse = false;
