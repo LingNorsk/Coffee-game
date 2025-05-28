@@ -290,3 +290,12 @@ if (gameBlocks) {
     e.preventDefault();
   }, { passive: false });
 }
+
+window.addEventListener('resize', () => {
+    // Переставить все фишки по новым координатам
+    for (const tile of tiles) {
+        const row = +tile.dataset.row;
+        const col = +tile.dataset.col;
+        setTilePosition(tile, row, col);
+    }
+});
